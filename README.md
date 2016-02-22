@@ -73,3 +73,11 @@ Applies a callback to an array at a given index.
 ```js
 [1,2,3,4].adjust(1, x => x+1) // [1,2,4,4]
 ```
+
+**take**
+
+Returns the first `x` number of items from an array
+
+```js
+[1,2,3,4].take(2) // [1,2]
+```
