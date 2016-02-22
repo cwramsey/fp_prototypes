@@ -1,0 +1,29 @@
+{
+  "name": "fp_prototypes",
+  "version": "1.0.0",
+  "description": "Adds functional-style prototypes to Array objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwramsey/fp_prototypes.git"
+  },
+  "keywords": [
+    "functional",
+    "javascript",
+    "functional",
+    "prototypes"
+  ],
+  "author": "Chris Ramsey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cwramsey/fp_prototypes/issues"
+  },
+  "homepage": "https://github.com/cwramsey/fp_prototypes#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
