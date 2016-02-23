@@ -6,6 +6,12 @@ This library attempts to extend that functionality by adding functional-style, c
 
 **All methods treat the data as immutable and return new values.**
 
+# Important Notes
+
+- This will **not** overwrite any pre-existing prototype methods you may have already implemented.
+- This should probably not be used in production, because, well, you're adding to the Array prototype. But I won't tell.
+- If you have any suggestions on improving methods, feel free to create an issue.
+
 # Installation
 
 Currently only available for Node 4+, or for use with the `--harmony` flag as they've been written in ES6 (mostly).
