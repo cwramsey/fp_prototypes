@@ -32,6 +32,15 @@ require('fp_prototypes');
 
 # Available Methods
 
+**append**
+
+Similar behavior to `concat` but doesn't require a value to be an array. A non-array will simply be added as the last element.
+
+```js
+[1,2,3].append(4) // [1,2,3,4]
+[1,2].append([3,4,5]) // [1,2,3,4,5]
+```
+
 **reject**
 
 The opposite of `filter`. Truthy values will be removed. If no callback is supplied, the truthiness of each value will be used instead.
