@@ -81,3 +81,15 @@ Returns the first `x` number of items from an array
 ```js
 [1,2,3,4].take(2) // [1,2]
 ```
+
+# TODO
+
+- append
+- prepend
+- drop (opposite of `take`)
+- dropLast
+- takeLast
+- reverse
+- merge
+- diff
+- unique
