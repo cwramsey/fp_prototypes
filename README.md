@@ -32,6 +32,14 @@ require('fp_prototypes');
 
 # Available Methods
 
+**adjust**
+
+Applies a callback to an array at a given index.
+
+```js
+[1,2,3,4].adjust(1, x => x+1) // [1,2,4,4]
+```
+
 **append**
 
 Similar behavior to `concat` but doesn't require a value to be an array. A non-array will simply be added as the last element.
@@ -41,28 +49,12 @@ Similar behavior to `concat` but doesn't require a value to be an array. A non-a
 [1,2].append([3,4,5]) // [1,2,3,4,5]
 ```
 
-**reject**
-
-The opposite of `filter`. Truthy values will be removed. If no callback is supplied, the truthiness of each value will be used instead.
-
-```js
-[1,2,3,4].reject(x => x === 3); // [1,2,4];
-```
-
 **head**
 
 Returns the first element of the array.
 
 ```js
 [1,2,3,4].head() // 1
-```
-
-**tail**
-
-Returns all except the first element of the array.
-
-```js
-[1,2,3,4].tail() // [2,3,4]
 ```
 
 **init**
@@ -81,12 +73,29 @@ Returns the last element of the array.
 [1,2,3,4].last() // 4
 ```
 
-**adjust**
+**prepend**
 
-Applies a callback to an array at a given index.
+Same behavior as `append` but prepends instead.
 
 ```js
-[1,2,3,4].adjust(1, x => x+1) // [1,2,4,4]
+[2,3].prepend(1) // [1,2,3]
+[3,4].prepend([1,2]) // [1,2,3,4]
+```
+
+**reject**
+
+The opposite of `filter`. Truthy values will be removed. If no callback is supplied, the truthiness of each value will be used instead.
+
+```js
+[1,2,3,4].reject(x => x === 3); // [1,2,4];
+```
+
+**tail**
+
+Returns all except the first element of the array.
+
+```js
+[1,2,3,4].tail() // [2,3,4]
 ```
 
 **take**
@@ -99,8 +108,6 @@ Returns the first `x` number of items from an array
 
 # TODO
 
-- append
-- prepend
 - drop (opposite of `take`)
 - dropLast
 - takeLast
